@@ -17,8 +17,8 @@
     data() {
       return {
         images: [
-          '../assets/km-dead-1.jpg',
-          '../assets/km-squat-1.jpg'
+          '../src/assets/km-dead-1.jpg',
+          '../src/assets/km-squat-1.jpg'
         ]
       }
     }
