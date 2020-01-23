@@ -1,7 +1,7 @@
 <template>
   <b-container fluid="sm">
     <b-row class="justify-content-around" >
-      <tron v-for="(image, x) in images" :key="x" v-bind:bgImage=image />
+      <tron v-for="(image, x) in images" :key="x" v-bind:style=image />
     </b-row>
   </b-container>
 </template>
@@ -16,9 +16,9 @@
     },
     data() {
       return {
-        images: [
-          '../assets/km-dead-1.jpg',
-          '../assets/km-squat-1.jpg'
+        styles: [
+          "background-image: url('../assets/km-dead-1.jpg');",
+          "background-image: url('../assets/km-squat-1.jpg');"
         ]
       }
     }
