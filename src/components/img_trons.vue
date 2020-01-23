@@ -1,7 +1,7 @@
 <template>
   <b-container fluid="sm">
     <b-row class="justify-content-around" >
-      <tron v-for="(image, x) in images" :key="x" v-bind:style=image />
+      <tron v-for="(image, x) in styles" :key="x" v-bind:style=image />
     </b-row>
   </b-container>
 </template>
