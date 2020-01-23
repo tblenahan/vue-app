@@ -1,7 +1,7 @@
 <template>
     <b-col sm="6" class="mt-4">
         <!-- style="background-image: url('../assets/km-squat-1.jpg');" -->
-        <b-jumbotron {{style}}>
+        <b-jumbotron v-bind:style=style >
           <p>For more information visit website</p>
         </b-jumbotron>
       </b-col>
@@ -17,8 +17,8 @@ export default {
       },
   },
   data() {
-    return{
-      style: "style= 'background-image: url(" + this.bgImage + ");",
+    return {
+      style: "background-image:" + this.bgImage,
     }
   }
 }
