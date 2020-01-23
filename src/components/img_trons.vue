@@ -1,8 +1,8 @@
 
 <template>
   <b-container fluid="sm">
-    <b-row class="justify-content-around" v-for:="(image, i) in images" :key="i">
-      <tron v-bind:bgImage={image}></tron>
+    <b-row class="justify-content-around" v-for="(image, i) in images" :key="i">
+      <tron v-bind:bgImage={image} />
     </b-row>
   </b-container>
 </template>
@@ -13,10 +13,12 @@
   export default {
     name: 'imgtron',
     data () {
-      images: [
-        '../assets/km-dead-1.jpg',
-        '../assets/km-squat-1.jpg'
-      ]
+      return {
+        images: [
+          '../assets/km-dead-1.jpg',
+          '../assets/km-squat-1.jpg'
+        ]
+      }
     }
   }
 
