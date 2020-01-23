@@ -1,10 +1,10 @@
 <template>
-    <b-col sm="6" class="mt-4">
+    <!-- <b-col sm="6" class="mt-4"> -->
         <!-- style="background-image: url('../assets/km-squat-1.jpg');" -->
-        <b-jumbotron v-bind:style=style >
+        <b-jumbotron >
           <p>For more information visit website</p>
         </b-jumbotron>
-      </b-col>
+      <!-- </b-col> -->
 </template>
 
 <script>
