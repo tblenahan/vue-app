@@ -1,11 +1,11 @@
-<!-- <template>
+<template>
     <b-col sm="6" class="mt-4">
         <!-- style="background-image: url('../assets/km-squat-1.jpg');" -->
-        <!-- <b-jumbotron style="background-image: url('');">
+        <b-jumbotron :style={style}>
           <p>For more information visit website</p>
         </b-jumbotron>
       </b-col>
-</template> -->
+</template>
 
 <script>
 // Vue.component('tron', {
@@ -31,20 +31,18 @@
 // })
 
 export default {
-  name: 'tron',
+  name:  'tron',
   prop: {
-        bgImage: {
-            type: String,
-            default: ""
-        },
-        bgStyle: "background-image:" + this.bgImage
-    },
-    template: 
-        <b-col sm="6" class="mt-4">
-            <b-jumbotron style={this.bgStyle}>
-            <p>For more information visit website</p>
-            </b-jumbotron>
-        </b-col>,
+      bgImage: {
+          type: String,
+          default: ""
+      },
+  },
+  data() {
+    return {
+      style: "background-image:" + this.bgImage,
+    }
+  }
 }
 
 </script>

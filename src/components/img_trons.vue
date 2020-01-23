@@ -1,4 +1,3 @@
-
 <template>
   <b-container fluid="sm">
     <b-row class="justify-content-around" v-for="(image, i) in images" :key="i">
@@ -8,10 +7,13 @@
 </template>
 
 <script>
-  import tron from './trons.vue'
+  import Tron from './tron.vue'
 
   export default {
     name: 'imgtron',
+    components: {
+      Tron
+    },
     data () {
       return {
         images: [
