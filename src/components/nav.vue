@@ -1,7 +1,7 @@
 <template>
   <div>
   <b-navbar toggleable="lg" type="dark" variant="info">
-    <img src="../assets/km-str-logo 2.png" style="height: auto; max-width: 120px;">
+    <img src="../../public/km-str-logo2.png" style="height: auto; max-width: 120px;">
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -10,7 +10,6 @@
         <b-nav-item href="#">Link</b-nav-item>
         <b-nav-item href="#" disabled>Disabled</b-nav-item>
       </b-navbar-nav>
-    
     </b-collapse>
   </b-navbar>
 </div>
