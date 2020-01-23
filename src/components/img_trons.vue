@@ -1,7 +1,7 @@
 <template>
   <b-container fluid="sm">
     <b-row class="justify-content-around" v-for="(image, i) in images" :key="i">
-      <tron :bgImage={image} />
+      <tron v-bind:bgImage={image} />
     </b-row>
   </b-container>
 </template>
@@ -14,7 +14,7 @@
     components: {
       Tron
     },
-    data () {
+    data() {
       return {
         images: [
           '../assets/km-dead-1.jpg',
